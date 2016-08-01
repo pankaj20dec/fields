@@ -1,0 +1,171 @@
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('fonts/ProximaNova-Regular.eot');
+	src: local('☺'), url('fonts/ProximaNova-Regular.woff') format('woff'), url('fonts/ProximaNova-Regular.ttf') format('truetype'), url('fonts/ProximaNova-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Times';
+	src: url('fonts/Times-Roman.eot');
+	src: local('☺'), url('fonts/Times-Roman.woff') format('woff'), url('fonts/Times-Roman.ttf') format('truetype'), url('fonts/Times-Roman.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Times';
+	src: url('fonts/Times-Italic.eot');
+	src: local('☺'), url('fonts/Times-Italic.woff') format('woff'), url('fonts/Times-Italic.ttf') format('truetype'), url('fonts/Times-Italic.svg') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Times';
+	src: url('fonts/Times-Bold.eot');
+	src: local('☺'), url('fonts/Times-Bold.woff') format('woff'), url('fonts/Times-Bold.ttf') format('truetype'), url('fonts/Times-Bold.svg') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Times';
+	src: url('fonts/Times-BoldItalic.eot');
+	src: local('☺'), url('fonts/Times-BoldItalic.woff') format('woff'), url('fonts/Times-BoldItalic.ttf') format('truetype'), url('fonts/Times-BoldItalic.svg') format('svg');
+	font-weight: bold;
+	font-style: italic;
+}
+$body-font: Times;
+$proxima: ProximaNova;
+$primary-color: #000000;
+$first-bgcolor: #ebebeb;
+$second-bgcolor: #f3f3f3;
+$body-fontsize: 14px;
+$font-styleItalic: italic;
+$font-styleNormal: normal;
+$header-fontSize: 12px;
+body{
+	font-family: $body-font;
+	font-size: $body-fontsize;
+	font-style: $font-styleItalic;
+	color: $primary-color;
+	line-height: 1.3;
+	letter-spacing: 1px;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+a{
+	color: $primary-color;
+}
+a:hover{
+	color: $primary-color;
+}
+h4{
+	font-family: $body-font;
+	font-size: 16px;
+	font-style: $font-styleNormal;
+	text-transform: uppercase;
+	margin: 25px 0;
+	letter-spacing: 4px;
+	
+}
+#header{
+	.top-navbar{
+		background-color: $first-bgcolor;
+		width: 100%;
+		position: relative;
+	ul{
+		display: block;
+		text-align: center;
+	li{
+		display: inline-block;
+		margin-right: 75px;
+		line-height: 40px;
+	a{
+		font-family: $proxima; 
+		font-size: $header-fontSize;
+		font-style: $font-styleNormal;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	 }
+	}	
+	}
+	 .cart{
+		position: absolute;
+		right: 25px;
+		top: 0;
+		line-height: 40px;
+		font-style: $font-styleNormal;
+	 }  
+	}
+	.logo{
+		line-height: 130px;
+		text-align: center;
+		position: relative;
+	.social-icons {
+		line-height: 130px;
+		position: absolute;
+		top: 20px;
+		left: 30px;
+	 a{
+		color: $primary-color;
+		text-decoration: none;
+	 i{
+		display: block;
+		margin-bottom: 20px;
+	 }
+	}	 
+	}
+	}
+} 
+
+
+
+
+#footer{
+	.follow{
+		padding-top: 110px;
+		text-align: center;
+	.socials a{
+		margin-right: 20px;
+	}
+	.socials a:last-child{
+		margin-right: 0;
+	}
+	}
+	.footer-menus{
+		line-height: 118px;
+	ul{
+		display: block;
+		text-align: center;
+	li{
+		display: inline-block;
+		margin: 0 30px;
+		line-height: 40px;
+	a{
+		font-family: $proxima; 
+		font-size: $header-fontSize;
+		font-style: $font-styleNormal;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	 }
+	}	
+	}
+	}
+	.copyright{
+		background-color: $first-bgcolor;
+		width: 100%;
+		text-align: center;
+		line-height: 40px;
+		letter-spacing: 1px;
+	}
+}
+
+
+
+
+
+
+
