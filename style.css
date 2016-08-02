@@ -45,7 +45,13 @@ a {
   color: #000000; }
 
 a:hover {
-  color: #000000; }
+  color: #000000;
+  text-decoration: none; }
+
+h3, .h3 {
+  font-size: 20px;
+  font-style: normal;
+  letter-spacing: 15px; }
 
 h4 {
   font-family: Times;
@@ -54,6 +60,65 @@ h4 {
   text-transform: uppercase;
   margin: 25px 0;
   letter-spacing: 4px; }
+
+.btn-default, .link-button {
+  background-color: transparent;
+  font-family: ProximaNova;
+  font-style: normal;
+  color: #000000;
+  border: 1px solid;
+  border-radius: 0;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  width: 210px;
+  padding: 8px 12px; }
+  .btn-default:hover, .link-button:hover {
+    background-color: transparent;
+    border: 1px solid;
+    color: #000000; }
+
+.link-button {
+  margin: 0 auto;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin-top: 40px; }
+
+.form-control {
+  font-family: ProximaNova;
+  font-style: normal;
+  color: #000000;
+  border: none;
+  box-shadow: none;
+  border-radius: 0; }
+
+.form-control::-moz-placeholder {
+  color: #000000; }
+
+.form-control:focus {
+  box-shadow: none; }
+
+.container {
+  width: 990px; }
+
+.price {
+  font-family: ProximaNova;
+  font-style: normal;
+  font-size: 15px; }
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.row.no-gutter {
+  margin-left: 0;
+  margin-right: 0; }
+
+.row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
+  padding-right: 0;
+  padding-left: 0; }
 
 #header .top-navbar {
   background-color: #ebebeb;
@@ -95,6 +160,78 @@ h4 {
         display: block;
         margin-bottom: 20px; }
 
+.main-container .banner {
+  min-height: 530px;
+  position: relative;
+  background-size: cover !important; }
+  .main-container .banner .banner-overlay {
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 20%; }
+    .main-container .banner .banner-overlay h3 {
+      margin-bottom: 20px; }
+    .main-container .banner .banner-overlay .sub-heading {
+      font-family: ProximaNova;
+      font-size: 16px;
+      letter-spacing: 8px;
+      font-style: normal;
+      padding: 15px 0 35px 0; }
+.main-container .featured-products {
+  padding-top: 85px; }
+  .main-container .featured-products img {
+    max-width: 100%; }
+  .main-container .featured-products .latest-text {
+    min-height: 335px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center; }
+    .main-container .featured-products .latest-text p {
+      margin-top: 20px; }
+  .main-container .featured-products .product-details h4 {
+    margin: 0;
+    padding: 15px 0 10px 0;
+    font-style: italic; }
+
+.home-blog {
+  padding-top: 60px;
+  text-align: center; }
+  .home-blog .blog-first-col {
+    min-height: 440px;
+    background-color: #f4f4f4; }
+    .home-blog .blog-first-col h4 {
+      margin: 0;
+      padding: 25px 0; }
+  .home-blog .no-gutter .col-md-7 img {
+    width: 100%; }
+  .home-blog img {
+    width: 100%;
+    min-height: 440px; }
+
+.about-page .banner {
+  min-height: 340px; }
+.about-page .about {
+  padding-bottom: 100px; }
+  .about-page .about .about-title {
+    padding: 115px 0;
+    margin: 0;
+    display: inline-block; }
+  .about-page .about .rectangle-image {
+    padding-left: 25px;
+    margin-top: -5px; }
+  .about-page .about img {
+    max-width: 100%; }
+  .about-page .about .about-content {
+    text-align: center;
+    padding: 35px 0 0 45px; }
+    .about-page .about .about-content p {
+      margin-bottom: 25px; }
+    .about-page .about .about-content img {
+      margin-bottom: 35px;
+      padding-top: 15px; }
+
 #footer .follow {
   padding-top: 110px;
   text-align: center; }
@@ -102,6 +239,8 @@ h4 {
     margin-right: 20px; }
   #footer .follow .socials a:last-child {
     margin-right: 0; }
+  #footer .follow h4 {
+    margin: 35px 0; }
 #footer .footer-menus {
   line-height: 118px; }
   #footer .footer-menus ul {
@@ -118,11 +257,29 @@ h4 {
         text-decoration: none;
         text-transform: uppercase;
         letter-spacing: 2px; }
+#footer .subscribe {
+  padding: 50px 0;
+  background-color: #f3f3f3; }
+  #footer .subscribe h4 {
+    margin-top: 0; }
+  #footer .subscribe p {
+    margin-bottom: 25px; }
+  #footer .subscribe .navbar-form {
+    margin: 0; }
+    #footer .subscribe .navbar-form .form-group {
+      margin-bottom: 25px;
+      display: block; }
+    #footer .subscribe .navbar-form .form-control {
+      width: 220px; }
+      #footer .subscribe .navbar-form .form-control:first-child {
+        margin-right: 8px; }
 #footer .copyright {
   background-color: #ebebeb;
   width: 100%;
   text-align: center;
   line-height: 40px;
   letter-spacing: 1px; }
+  #footer .copyright p {
+    margin-bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */
